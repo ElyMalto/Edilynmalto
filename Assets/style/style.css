@@ -1,0 +1,125 @@
+*{
+    color: #ddd;
+}
+body {
+    font-family: 'Tahoma', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../image/background.gif");
+    
+  }
+  
+  .section {
+    margin: 50px 0;
+  }
+  
+  .welcome {
+    display: flex;
+    align-items: center;
+  }
+  
+  .welcome img {
+    max-width: 30%;
+    border-radius: 1000px;
+  }
+  
+  .welcome-text {
+    padding: 20px;
+  }
+  
+  .about-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-me img {
+    max-width: 30%;
+    display: flex;
+  }
+  
+  .about-text {
+    padding: 20px;
+  }
+  
+  .projects {
+    text-align: center;
+  }
+  
+  .project-images img {
+    max-width: 40%;
+    margin: 10px;
+  }
+  
+  .contact {
+    text-align: center;
+  }
+  
+  nav.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #4b4b4b;
+    z-index: 100;
+    font-size: x-large;
+    float:right;
+    color: #af4c4c;
+    padding: 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  
+
+
+  .skills {
+    margin-top: 20px;
+  }
+  
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    flex: 1;
+  }
+  
+  .skill-bar {
+    flex: 3;
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 80px;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    border-radius: 8px;
+    background-color: #af4c4c;
+  }
+
+  @media screen and (max-width: 708px) {
+    .welcome img,
+    .about-me img,
+    .project-images img {
+        max-width: 50%;
+    }
+
+    .skill-bar {
+        margin-right: 20px;
+    }
+    .welcome img{ max-width: 50%;}
+}
+
+@media screen and (max-width: 480px) {
+    .welcome-text,
+    .about-text,
+    .project-images img {
+        padding: 10px;
+    }
+
+    .skill-bar {
+        margin-right: 10px;
+    }
+}
